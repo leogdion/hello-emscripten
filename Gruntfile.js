@@ -14,3 +14,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svn-export');
   grunt.registerTask('default', ['svn_export']);
 };
+
+/*
+emconfigure cmake ../src
+emmake make
+emcc gme/libgme.so
+*/
