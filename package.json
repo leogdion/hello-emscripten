@@ -1,29 +1,25 @@
 {
-  "name": "gmemujs",
-  "version": "0.0.1",
-  "description": "gmemujs =======",
-  "main": "./dist/gmemu.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "node ./node_modules/svn-npm-crutch/lib/svn-npm-crutch.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/leogdion/gmemujs.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/leogdion/gmemujs/issues"
-  },
-  "homepage": "https://github.com/leogdion/gmemujs",
-  "devDependencies": {
-    "grunt": "~0.4.2"
-  },
-  "dependencies": {
-    "svn-npm-crutch": "~0.5.4"
-  },
-  "svnDependencies": {
-    "game-music-emu": "http://game-music-emu.googlecode.com/svn/trunk/"
+	"name": "gmemujs",
+	"version": "0.0.1",
+	"description": "gmemujs =======",
+	"main": "./dist/gmemu.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"install": "node ./node_modules/svn-npm-crutch/lib/svn-npm-crutch.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leogdion/gmemujs.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/leogdion/gmemujs/issues"
+	},
+	"homepage": "https://github.com/leogdion/gmemujs",
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-svn-export": "~0.1.3",
+		"emscripten": "git+https://github.com/kripken/emscripten.git"
 	}
 }
