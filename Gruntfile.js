@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    clean : ["tmp"],
     svn_export: {
       dev: {
         options: {
@@ -8,11 +9,21 @@ module.exports = function(grunt) {
           output: 'tmp/src'
         }
       }
+    },
+    shell: {
+      emscripten : {
+        command : ["echo \"test\"", "mkdir tmp/build", "cd tmp/build", "emconfigure cmake ../src","emmake make","emcc gme/libgme.so"].join('&&'),
+            options: {
+                stdout: true
+            }
+      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-svn-export');
-  grunt.registerTask('default', ['svn_export']);
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.registerTask('default', ['clean', 'svn_export', 'shell']);
 };
 
 /*
