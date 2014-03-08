@@ -2,15 +2,15 @@
     if (typeof module != 'undefined') module.exports = definition()
     else if (typeof define == 'function' && define.amd) define(name, definition)
     else this[name] = definition()
-}('gmemujs', function () {
+}('hello_emscripten', function () {
   
     // Module here
   var Module = function () {
-    include "../../tmp/build/a.out.js"
+    include "../../tmp/hello-emscripten.js"
     return Module;
   }();
   
   return {
-    helloWorld : Module.cwrap('gmemujs_test', "string", [])
+    hello : Module.cwrap('hello_world', "string", [])
   };
 });
