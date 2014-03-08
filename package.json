@@ -1,19 +1,17 @@
 {
-  "name": "gmemujs",
+  "name": "hello-emscripten",
   "version": "0.0.1",
-  "description": "gmemujs =======",
-  "main": "./dist/gmemu.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/leogdion/gmemujs.git"
+    "url": "https://github.com/leogdion/hello-emscripten.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leogdion/gmemujs/issues"
+    "url": "https://github.com/leogdion/hello-emscripten/issues"
   },
-  "homepage": "https://github.com/leogdion/gmemujs",
+  "homepage": "https://github.com/leogdion/hello-emscripten",
   "devDependencies": {
     "grunt": "~0.4.3",
     "grunt-contrib-clean": "~0.5.0",
