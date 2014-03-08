@@ -1,2 +1,2 @@
-gmemujs
+hello-emscripten
 =======
