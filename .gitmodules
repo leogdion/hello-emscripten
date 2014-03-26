@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/leogdion/hello-emscripten.git
+	branch = gh-pages
